@@ -10,6 +10,7 @@ import { CharactersComponent } from './main/characters/characters.component';
 import { AboutComponent } from './main/about/about.component';
 import { DetailsComponent } from './main/details/details.component';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

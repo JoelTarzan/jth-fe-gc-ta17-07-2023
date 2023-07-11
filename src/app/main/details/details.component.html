@@ -2,16 +2,16 @@
     <div class="card mb-3">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="{{characterSelected.image}}" class="card-img-top" alt="{{characterSelected.name}} image">
+                <img src="{{ character.image }}" class="card-img-top" alt="{{character.name}} image">
         </div>
         <div class="col-md-8">
             <div class="card-body">
-                <h5 class="card-title mt-3 mb-4 fs-1">{{characterSelected.name}}</h5>
-                <p class="card-text fs-3">Status: {{characterSelected.status}}</p>
-                <p class="card-text fs-3">Species: {{characterSelected.species}}</p>
-                <p class="card-text fs-3">Gender: {{characterSelected.gender}}</p>
-                <p class="card-text fs-3">Origin: {{characterSelected.origin}}</p>
-                <p class="card-text fs-3">Location: {{characterSelected.location}}</p>
+                <h5 class="card-title mt-3 mb-4 fs-1">{{character.name}}</h5>
+                <p class="card-text fs-3">Status: {{character.status}}</p>
+                <p class="card-text fs-3">Species: {{character.species}}</p>
+                <p class="card-text fs-3">Gender: {{character.gender}}</p>
+                <p class="card-text fs-3">Origin: {{character.origin.name}}</p>
+                <p class="card-text fs-3">Location: {{character.location.name}}</p>
             </div>
         </div>
     </div>
